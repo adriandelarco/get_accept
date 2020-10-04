@@ -9,7 +9,7 @@ module GetAccept
     end
 
     def preview id
-      get("/documents/#{id}/preview")
+      post("/documents/#{id}/preview")
     end
 
     def find_by_external_id external_id
